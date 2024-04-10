@@ -1,1 +1,8 @@
-<p>home works!</p>
+<section>
+    <h1>Diretivas Estruturais - *ngIf</h1>
+    <h2>Tuas Vistas</h2>
+    <p *ngIf=" tuasvistas.length == 0 ;else outro">Tu é Gentil</p>
+    <ng-template #outro>
+        <span *ngFor="let i of tuasvistas; index as c"><ul><li>{{i}}</li></ul></span>
+    </ng-template>
+</section>
