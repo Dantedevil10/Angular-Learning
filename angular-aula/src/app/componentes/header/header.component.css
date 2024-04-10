@@ -1,12 +1,17 @@
 *{
-    color: white;
+    
 }
 header{
     background-color: black;
+    height:50px;
+    display: flex;
+    justify-content: center;
 }
-header div {
+.itens {
     display: flex;
     gap: 30px;
-    justify-content: center;
     align-items: center;
+}
+a{
+    color: white;
 }
