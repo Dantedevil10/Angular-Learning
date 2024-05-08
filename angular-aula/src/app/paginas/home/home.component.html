@@ -6,4 +6,21 @@
     <ng-template #outro>
         <span *ngFor="let i of tuasvistas; index as c"><ul><li>{{i}}</li></ul></span>
     </ng-template>
+
+</section><br>
+<section>
+    <input type="button" value="Listar" (click)="getHero()">
+</section>
+<section>
+    <div class="lista-container" *ngFor="let hero of listaHeros">
+        <figure>
+            <img src="{{hero.images.lg}}" alt="">
+        </figure>
+        <article>
+            <h1>{{hero.name}}</h1>
+        </article>
+        <article>
+            <p>{{hero.work.occupation}}</p>
+        </article>
+    </div>
 </section>
