@@ -7,6 +7,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { SobreComponent } from './paginas/sobre/sobre.component';
 import { ContatoComponent } from './paginas/contato/contato.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { ContatoComponent } from './paginas/contato/contato.component';
     HeaderComponent,
     HomeComponent,
     SobreComponent,
-    ContatoComponent
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
